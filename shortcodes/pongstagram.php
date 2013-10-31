@@ -12,8 +12,19 @@
 //no direct accees
 defined ('_JEXEC') or die('resticted aceess');
 
-Helix::addJS(array('bootstrap.min.js', 'pongstagr.am.js'));
-Helix::addCSS(array('pongstagr.am.css', 'bootstrap.min.css', 'bootstrap-responsive.min.css'));
+$document = JFactory::getDocument();
+
+$path = strstr(realpath(dirname(__FILE__)), 'plugins');
+$path = str_replace("plugins", "", $path);
+$path = str_replace("shortcodes", "", $path);
+$path = JURI::root(true).'/plugins'.$path;
+
+$document->addStyleSheet($path.'css/pongstagr.am.css');
+$document->addStyleSheet($path.'css/bootstrap.min.css');
+$document->addStyleSheet($path.'css/bootstrap-responsive.min.css');
+
+$document->addScript($path.'js/bootstrap.min.js');
+$document->addScript($path.'js/pongstagr.am.js');
 
 jimport('joomla.registry.registry');
 
