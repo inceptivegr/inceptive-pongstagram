@@ -1,0 +1,13 @@
+/*------------------------------------------------------------------------
+# css/style.css - Inceptive Pongstagram Content Plugin
+# ------------------------------------------------------------------------
+# version   1.0
+# author    Inceptive Design Labs
+# copyright Copyright (C) 2013 Inceptive Design Labs. All Rights Reserved
+# license   GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html
+# website   http://extend.inceptive.gr
+-------------------------------------------------------------------------*/
+
+.button2-left .pongstagram {
+    background: url(../images/j_button2_pongstagram.png) 100% 0 no-repeat;
+}

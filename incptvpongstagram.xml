@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content" method="upgrade">
+	<name>Inceptive Pongstagram</name>
+	<author>Extend by Inceptive Design Labs</author>
+	<authorEmail>inceptive@inceptive.gr</authorEmail>
+	<authorUrl>http://extend.inceptive.gr</authorUrl>
+	<copyright>Copyright (C) 2013 Inceptive Design Labs. All Rights Reserved</copyright>
+	<creationDate>October, 2013</creationDate>
+	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
+	<version>1.0</version>
+	<description>
+	<![CDATA[
+	<div class="desc-container">
+	    <p>Thank you for installing <a href="#" title="Inceptive Pongstagram">Inceptive Pongstagram</a>.</p>
+	    <p><a href="#" title="Inceptive Pongstagram">Inceptive Pongstagram</a> is a beautiful and easy way to display Instagram &copy; images in your Joomla! site.</p>
+	    <p>The plugin displays the images using a shortcode. You can use the pongstagram button in yout editor to see the formating. The plugin also does major utilization of the <a href="https://github.com/pongstr/pongstagr.am" title="pongstagr.am">pongstagr.am jQuery Plugin</a>. Pongstagr.am is a jQuery plugin that lets display your instagram media to your website using Bootstrap Front-end styles and modal-plugin.</p>
+	    <p>To use this plugin you need an Instagram User ID. If you have zero idea what your user id is, you may head to this <a href="http://jelled.com/instagram/lookup-user-id">link.</a>.</p>
+	    <p>You also need an Access Token. To get your access token, you may head to this <a href="http://jelled.com/instagram/access-token">link.</a>, make sure you follow the instructions on the "How do I get my client id?" link.</p>
+	</div>
+	]]>
+	</description>
+	<files>
+		<filename plugin="incptvpongstagram">incptvpongstagram.php</filename>
+		<folder>core</folder>
+		<folder>plugins</folder>
+		<folder>js</folder>
+		<folder>img</folder>
+		<folder>css</folder>
+		<folder>shortcodes</folder>
+		<folder>installation</folder>
+		<filename>index.html</filename>
+	</files>
+	<config>
+	    <fields name="params" >
+		<fieldset name="basic">
+		    <field name="userid" type="text" default="39666111" label="User ID" description="User ID" size="20" />
+		    <field name="access_token" type="text" default="39666111.1fb234f.c3901000b4944a549fd5fd2310c63780" label="Access Token" description="Access Token" size="60" />
+		    <field  name="show" type="list" default="recent" label="Show" description="What to show by default">
+			<option value="recent">Recent</option>
+			<option value="feed">Feed</option>
+			<option value="liked">Liked</option>
+			<option value="user">User</option>
+			<option value="tags">Tags</option>
+		    </field>
+		    <field name="tags" type="text" default="i_promote_greece" label="Tag to search" description="In case of 'Show' is Tags, search for this tag" size="20" />
+		    <field name="count" type="text" default="4" filter="integer" label="Number of photos to show" description="Number of photos to show each time" size="20" />
+		    <field  name="pager" type="list" default="true" label="Show pager" description="Show the 'Load more' button">
+			<option value="true">Yes</option>
+			<option value="false">No</option>
+		    </field>
+		</fieldset>	
+	    </fields>
+	</config>
+	<plugins>
+		<plugin plugin="incptvpongstagram" group="editors-xtd" />
+	</plugins>
+	<scriptfile>installation/script.incptvpongstagram.php</scriptfile>
+</extension>
