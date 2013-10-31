@@ -18,7 +18,7 @@ class plgButtonIncptvPongstagram extends JPlugin
 	$document->addStyleSheet(JURI::base(true).'/../plugins/editors-xtd/incptvpongstagram/css/style.css');
         $jsCode = "
                 function insertShortCode(nameOfEditor) {
-                    jInsertEditorText('[pongstagram]This is an easily tweetable text![/pongstagram]', nameOfEditor);
+                    jInsertEditorText('[pongstagram show=\"recent\" count=\"8\"]', nameOfEditor);
                 }
             ";
         $document->addScriptDeclaration($jsCode);

@@ -8,20 +8,13 @@
 	<creationDate>October, 2013</creationDate>
 	<license>GNU/GPL Version 2 or later - http://www.gnu.org/licenses/gpl-2.0.html</license>
 	<version>1.0</version>
-	<description><![CDATA[<div>
-			<p>
-				<a href="http://extend.inceptive.gr/shop/joomla-extensions/inceptive-tweetable/" title="Inceptive Tweetable">Inceptive Tweeetable</a> by <a href="http://extend.inceptive.gr" title="Extend by Inceptive Design Labs">Extend by Inceptive Design Labs</a> is a Joomla plugin that by the use of a shortcode lets you make site content easily tweetable.<br />
-			</p>
-			<p>
-				Based on the jQuery plugin <a href="" title="jquery.tweetable.js">jquery.tweetable.js</a> developed by <a href="http://jmduke.com" title="Justin Duke a.k.a jmduke">Justin Duke a.k.a jmduke</a>. Originaly found <a href="https://github.com/jmduke/jquery.tweetable.js" title="plugin page on github">here</a>.
-			</p>
-			<p>
-				The shortcode functionality is heavily based on the shortcode functionality of the <a href="http://www.joomshaper.com/helix" title="Helix Framework">Helix Framework</a>. The plugin, actually includes a stripped version of the System Plugin that comes with the <a href="http://www.joomshaper.com/helix" title="Helix Framework">Helix Framework</a>.
-			</p>
-			<p>
-				Please be kind enough to review our plugins on <a href="https://extensions.joomla.org/extensions/owner/Inceptive-Design-Labs" title="">JED</a>!
-			</p>
-		</div>]]></description>
+	<description><![CDATA[<div class="desc-container">
+	    <p>Thank you for installing <a href="http://extend.inceptive.gr/shop/joomla-extensions/inceptive-pongstagram/" title="Inceptive Pongstagram">Inceptive Pongstagram</a>.</p>
+	    <p><a href="http://extend.inceptive.gr/shop/joomla-extensions/inceptive-pongstagram/" title="Inceptive Pongstagram">Inceptive Pongstagram</a> is a beautiful and easy way to display Instagram &copy; images in your Joomla! site.</p>
+	    <p>The plugin displays the images using a shortcode. You can use the pongstagram button in yout editor to see the formating. The plugin also does major utilization of the <a href="https://github.com/pongstr/pongstagr.am" title="pongstagr.am">pongstagr.am jQuery Plugin</a>. Pongstagr.am is a jQuery plugin that lets display your instagram media to your website using Bootstrap Front-end styles and modal-plugin.</p>
+	    <p>To use this plugin you need an Instagram User ID. If you have zero idea what your user id is, you may head to this <a href="http://jelled.com/instagram/lookup-user-id">link.</a>.</p>
+	    <p>You also need an Access Token. To get your access token, you may head to this <a href="http://jelled.com/instagram/access-token">link.</a>, make sure you follow the instructions on the "How do I get my client id?" link.</p>
+	</div>]]></description>
     <files>
         <filename plugin="incptvpongstagram">incptvpongstagram.php</filename>
 		<folder>css</folder>
