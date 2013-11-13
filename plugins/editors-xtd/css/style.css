@@ -11,3 +11,7 @@
 .button2-left .pongstagram {
     background: url(../images/j_button2_pongstagram.png) 100% 0 no-repeat;
 }
+
+.icon-pongstagram:before {
+	content: url(../images/pongstagram.png);
+}

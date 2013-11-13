@@ -23,6 +23,8 @@ class plgButtonIncptvPongstagram extends JPlugin
             ";
         $document->addScriptDeclaration($jsCode);
         $button = new JObject();
+	$button->set('modal',false);
+	$button->set('class','btn');
         $button->set('text','Pongstagram');
         $button->set('onclick', 'insertShortCode(\''.$name.'\')');
         $button->set('name', 'pongstagram');
