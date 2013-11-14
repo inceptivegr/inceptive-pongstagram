@@ -252,7 +252,7 @@
 			}
 
 			$tag = $m[2];
-			$attr = shortcode_parse_atts( $m[3] );
+			$attr = shortcode_parse_atts( strip_tags($m[3]) );
 
 			if ( isset( $m[5] ) ) {
 				// enclosing tag - extra parameter
@@ -376,7 +376,6 @@
  */
 	if (!function_exists('shortcode_unautop')) {
 		function shortcode_unautop( $pee ) {
-
 			global $helix;
 
 			if ( empty( $helix->shortcode_tags ) || !is_array( $helix->shortcode_tags ) ) {
