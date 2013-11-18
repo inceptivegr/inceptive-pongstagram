@@ -37,8 +37,8 @@ if(!function_exists('pongstagram_sc')){
     $pluginParams = new JRegistry();
     $pluginParams->loadString($plugin->params, 'JSON');
     
-    $userid = ($atts['userid'] != '' ? $atts['userid'] : $pluginParams->get('userid', '39666111'));
-    $access_token = ($atts['access_token'] != '' ? $atts['access_token'] : $pluginParams->get('access_token', '39666111.1fb234f.c3901000b4944a549fd5fd2310c63780'));
+    $userid = ($atts['userid'] != '' ? $atts['userid'] : $pluginParams->get('userid', '679256982'));
+    $access_token = ($atts['access_token'] != '' ? $atts['access_token'] : $pluginParams->get('access_token', '679256982.401c5ac.0a183542db5f4ae1b51caae21acadc1e'));
     $show = ($atts['show'] != '' ? $atts['show'] : $pluginParams->get('show', 'recent'));
     
     $divid = $show.'_'.rand(0, 9999);

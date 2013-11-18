@@ -31,8 +31,8 @@
 	<config>
 	    <fields name="params" >
 		<fieldset name="basic">
-		    <field name="userid" type="text" default="39666111" label="User ID" description="User ID" size="20" />
-		    <field name="access_token" type="text" default="39666111.1fb234f.c3901000b4944a549fd5fd2310c63780" label="Access Token" description="Access Token" size="60" />
+		    <field name="userid" type="text" default="679256982" label="User ID" description="User ID" size="20" />
+		    <field name="access_token" type="text" default="679256982.401c5ac.0a183542db5f4ae1b51caae21acadc1e" label="Access Token" description="Access Token" size="60" />
 		    <field  name="show" type="list" default="recent" label="Show" description="What to show by default">
 			<option value="recent">Recent</option>
 			<option value="feed">Feed</option>
