@@ -1,7 +1,7 @@
 
 <?php
 /*------------------------------------------------------------------------
-# incptvpongstagrambutton.php - Inceptive Pongstagram Editor Button
+# Inceptive Pongstagram Editor Button
 # ------------------------------------------------------------------------
 # author    Inceptive Design Labs
 # copyright Copyright (C) 2013 Inceptive Design Labs. All Rights Reserved

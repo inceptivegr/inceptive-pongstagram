@@ -1,6 +1,6 @@
 <?php
 /*------------------------------------------------------------------------
-# incptvpongstagram.php - Inceptive Pongstagram Content Plugin
+# Inceptive Pongstagram Content Plugin
 # ------------------------------------------------------------------------
 # author    Inceptive Design Labs
 # copyright Copyright (C) 2013 Inceptive Design Labs. All Rights Reserved
@@ -28,7 +28,7 @@ class plgContentIncptvpongstagram extends JPlugin {
 			$document = JFactory::getDocument();
 			$type = $document->getType();
 
-			if($type=='html') {
+			if($type=='html' && isset($article->id) && isset($article->text)) {
 
 				$oldhead = $document->getHeadData();  // old head
 
@@ -41,21 +41,25 @@ class plgContentIncptvpongstagram extends JPlugin {
 
 				$data = shortcode_unautop($data);
 				$data = do_shortcode($data); 
-				$newhead = $document->getHeadData();  // new head
-				$scripts =  (array)  array_diff_key($newhead['scripts'], $oldhead['scripts']);
-				$styles  =  (array) array_diff_key($newhead['styleSheets'], $oldhead['styleSheets']);
+                                
+                                if($data != $article->text)
+                                {
+                                    $newhead = $document->getHeadData();  // new head
+                                    $scripts =  (array)  array_diff_key($newhead['scripts'], $oldhead['scripts']);
+                                    $styles  =  (array) array_diff_key($newhead['styleSheets'], $oldhead['styleSheets']);
 
-				$new_head_data = '';
+                                    $new_head_data = '';
 
-				foreach ($scripts as $key => $type)
-					$new_head_data .= '<script type="' . $type['mime'] . '" src="' . $key . '"></script>';
+                                    foreach ($scripts as $key => $type)
+                                            $new_head_data .= '<script type="' . $type['mime'] . '" src="' . $key . '"></script>';
 
-				foreach ($styles as $key => $type)
-					$new_head_data .=  '<link rel="stylesheet" href="' . $key . '" />';
+                                    foreach ($styles as $key => $type)
+                                            $new_head_data .=  '<link rel="stylesheet" href="' . $key . '" />';
 
-				$data = str_replace('</head>', $new_head_data . "\n</head>", $data);
+                                    $data = str_replace('</head>', $new_head_data . "\n</head>", $data);
 
-				$article->text = $data;
+                                    $article->text = $data;
+                                }
 			}
 		}
     }
